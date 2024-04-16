@@ -35,13 +35,10 @@
         return "No swap performed";
     }
 
-    // Destructure the first element of the array
     const [first, ...rest] = array;
 
-    // Use the at method of arrays to grab the last element
     const last = array.at(array.length - 1);
-
-    // Swap the first and last elements
+      
     array[0] = last;
     array[array.length - 1] = first;
 
